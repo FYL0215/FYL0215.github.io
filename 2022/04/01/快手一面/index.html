@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>WELCOME！Tangerine’s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ssl与tsl：用于信息的加密处理，ssl与tsl都是基于TCP运行的，SL“安全套接层”协议，TLS“安全传输层”协议，浏览器与服务器进行双边的密匙确认建立连接 HTTPS与HTTP的一些区别  HTTPS协议需要到CA申请证书，一般免费证书很少，需要交费（若没有CA证书，除非用户设置信任网站，否则显示出错） HTTP协议运行在TCP之上，所有传输的内容都是明文，HTTPS运行在SSL&amp;#x2F">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WELCOME！Tangerine’s Blog">
+<meta property="og:url" content="https://github.com/FYL0215/2022/04/01/%E5%BF%AB%E6%89%8B%E4%B8%80%E9%9D%A2/index.html">
+<meta property="og:site_name" content="WELCOME！Tangerine’s Blog">
+<meta property="og:description" content="ssl与tsl：用于信息的加密处理，ssl与tsl都是基于TCP运行的，SL“安全套接层”协议，TLS“安全传输层”协议，浏览器与服务器进行双边的密匙确认建立连接 HTTPS与HTTP的一些区别  HTTPS协议需要到CA申请证书，一般免费证书很少，需要交费（若没有CA证书，除非用户设置信任网站，否则显示出错） HTTP协议运行在TCP之上，所有传输的内容都是明文，HTTPS运行在SSL&amp;#x2F">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-01T07:15:41.713Z">
+<meta property="article:modified_time" content="2022-04-01T09:12:17.539Z">
+<meta property="article:author" content="FYL">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/FYL0215/atom.xml" title="WELCOME！Tangerine’s Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/FYL0215/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/FYL0215/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/FYL0215/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/FYL0215/" id="logo">WELCOME！Tangerine’s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/FYL0215/">Home</a>
+        
+          <a class="main-nav-link" href="/FYL0215/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/FYL0215/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/FYL0215"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-快手一面" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/FYL0215/2022/04/01/%E5%BF%AB%E6%89%8B%E4%B8%80%E9%9D%A2/" class="article-date">
+  <time class="dt-published" datetime="2022-04-01T07:15:41.713Z" itemprop="datePublished">2022-04-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>ssl与tsl：用于信息的加密处理，ssl与tsl都是基于TCP运行的，SL“安全套接层”协议，TLS“安全传输层”协议，浏览器与服务器进行双边的密匙确认建立连接</p>
+<p><strong>HTTPS与HTTP的一些区别</strong></p>
+<ul>
+<li>HTTPS协议需要到CA申请证书，一般免费证书很少，需要交费（若没有CA证书，除非用户设置信任网站，否则显示出错）</li>
+<li>HTTP协议运行在TCP之上，所有传输的内容都是明文，HTTPS运行在SSL&#x2F;TLS之上，SSL&#x2F;TLS运行在TCP之上，所有传输的内容都经过加密的。</li>
+<li>HTTP和HTTPS使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。</li>
+<li>HTTPS可以有效的防止运营商劫持，解决了防劫持的一个大问题。</li>
+</ul>
+<p>浏览器工作的顺序：</p>
+<p>1、客户端浏览器通过<strong>DNS解析到<a target="_blank" rel="noopener" href="http://www.baidu.com的ip地址202.108.22.5,/">www.baidu.com的IP地址202.108.22.5，</a></strong>通过这个IP地址找到客户端到服务器的路径。客户端浏览器发起一个HTTP会话到202.108.22.5，然后通过<strong>TCP进行封装数据包，输入到网络层。</strong><br>2、在客户端的传输层，把HTTP会话请求分成报文段，添加源和目的端口，如服务器使用80端口监听客户端的请求，客户端由系统随机选择一个端口如5000，与服务器进行交换，服务器把相应的请求返回给客户端的5000端口。然后使用IP层的IP地址查找目的端。 <strong>(建立tcp连接)</strong><br>3、客户端的网络层不用关心应用层或者传输层的东西，<strong>主要做的是通过查找路由表确定如何到达服务器</strong>，期间可能经过多个路由器，这些都是由路由器来完成的工作，我不作过多的描述，无非就是通过查找路由表决定<strong>通过那个路径到达服务器。</strong> （<strong>IP的重要功能是寻址和路由</strong>）<br><strong>4、客户端的链路层，包通过链路层发送到路由</strong>器，通过邻居协议<strong>查找给定IP地址的MAC地址，</strong>然后发送ARP请求查找目的地址，如果得到回应后就可以使用ARP的请求应答交换的IP数据包现在就可以传输了，然后发送<strong>IP数据包到达服务器的地址。（IP地址转为MAC）</strong></p>
+<h2 id="涉及到的协议"><a href="#涉及到的协议" class="headerlink" title="涉及到的协议"></a><strong>涉及到的协议</strong></h2><p>(1) 应用层：HTTP(WWW访问协议)，DNS(域名解析服务)<br>DNS解析域名为目的IP，通过IP找到服务器路径，客户端向服务器发起HTTP会话，然后通过运输层TCP协议封装数据包，在TCP协议基础上进行传输</p>
+<p>(2) 传输层：TCP(为HTTP提供可靠的数据传输)，UDP(DNS使用UDP传输)<br>HTTP会话会被分成报文段，添加源、目的端口；TCP协议进行主要工作</p>
+<p>(3)网络层：IP(IP数据数据包传输和路由选择)，ICMP(提供网络传输过程中的差错检测)，ARP(将本机的默认网关IP地址映射成物理MAC地址)<br>为数据包选择路由，IP协议进行主要工作，相邻结点的可靠传输，ARP协议将IP地址转成MAC地址。</p>
+<p>为什么要进行TCP3次握手？</p>
+<p>1）主要原因：为了防止旧的重复连接引起连接混乱问题</p>
+<p>在网络状况比较复杂或者网络状况比较差的情况下，发送方可能会连续发送多次建立连接的请求。如果 TCP 握手的次数只有两次，那么接收方只能选择接受请求或者拒绝接受请求，但它并不清楚这次的请求是正常的请求，还是由于网络环境问题而导致的过期请求，如果是过期请求的话就会造成错误的连接</p>
+<p>如果 TCP 是三次握手的话，那么客户端在接收到服务器端 SEQ+1 的消息之后，就可以判断当前的连接是否为历史连接，如果判断为历史连接的话就会发送终止报文（RST）给服务器端终止连接；如果判断当前连接不是历史连接的话就会发送指令给服务器端来建立连接。</p>
+<p>2）同步初始化序列化：TCP 为了保证在不稳定的网络环境中构建一个稳定的数据连接，它就需要一个“序列号”字段来保证自己的稳定性，而这个序列号的作用就是防止数据包重复发送，以及有效的解决数据包接收时顺序颠倒的问题</p>
+<p>&#x3D;&#x3D;三次握手可以保证客户端与服务端拥有一个初始化的可靠的序列号&#x3D;&#x3D;</p>
+<p>为什么TCP消去链接需要等待2MSL？</p>
+<p>1）为了保证客户端发送的最后一个ACK报文段能够到达服务器。因为这个ACK有可能丢失，从而导致处在LAST-ACK状态的服务器收不到对FIN-ACK的确认报文。服务器会超时重传这个FIN-ACK，接着客户端再重传一次确认，重新启动时间等待计时器。最后客户端和服务器都能正常的关闭。假设客户端不等待2MSL，而是在发送完ACK之后直接释放关闭，一但这个ACK丢失的话，服务器就无法正常的进入关闭连接状态。</p>
+<p>2、他还可以防止已失效的报文段。客户端在发送最后一个ACK之后，再经过经过2MSL，就可以使本链接持续时间内所产生的所有报文段都从网络中消失。从保证在关闭连接后不会有还在网络中滞留的报文段去骚扰服务器。</p>
+<p>&#x3D;&#x3D;TCP3次握手与TCP4次挥手都有避免网络延迟带来的困扰&#x3D;&#x3D;</p>
+<p>IP寻址的过程：<br>IP地址由5类构成，IP：：&#x3D;{&lt;网络号&gt;，&lt;主机号&gt;}，其中网络号在整个网络中唯一，主机号在网络中唯一</p>
+<p>1）从IP数据报的首部提取出目的主机的IP地址D，得出目的网络地址N</p>
+<p>2）若目的网络地址地址与该路由器直接相连，则把数据报直接交付给目的主机D，否则进行间接交付</p>
+<p>3）若路由表中有目的地址D的特定路由器，则传送给指定的路由器</p>
+<p>4）路由表中有到达目的网络的下一条路由器则转到下一跳路由器</p>
+<p>5）步骤四没有，则转到默认路由</p>
+<p>6）报告转发分组出错</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FYL0215/2022/04/01/%E5%BF%AB%E6%89%8B%E4%B8%80%E9%9D%A2/" data-id="cl1iq3i8y0004vs9v4bo2689f" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/FYL0215/2022/03/31/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/FYL0215/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/FYL0215/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/FYL0215/2022/04/01/%E5%BF%AB%E6%89%8B%E4%B8%80%E9%9D%A2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/FYL0215/2022/03/31/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/FYL0215/2022/03/31/Arcgis/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/FYL0215/2022/03/30/OPPOHR/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/FYL0215/2022/03/29/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/">自然语言处理</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 FYL<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/FYL0215/" class="mobile-nav-link">Home</a>
+  
+    <a href="/FYL0215/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/FYL0215/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/FYL0215/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/FYL0215/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

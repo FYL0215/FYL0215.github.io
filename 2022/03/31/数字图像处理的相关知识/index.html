@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>设计模式 | WELCOME！Tangerine’s Blog</title>
+  <title>WELCOME！Tangerine’s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="单例设计模式： 1.无继承情况类对象能直接访问类的public成员，但不能直接访问protected、private成员类的成员函数可以将类的private、protected成员变量传出去2.公有继承子类对象能直接访问父类public成员，不能直接访问父类private、protected成员子类不能通过成员函数访问父类的private成员，但protected成员可以3.受保护继承 &amp;#x2F">
+  <meta name="description" content="图像的平滑处理： 定于：图像平滑是一种&#x3D;&#x3D;区域增强&#x3D;&#x3D;的算法，平滑算法有邻域平均法、均值滤波、边界保持类滤波等。在图像产生、传输和复制过程中，常常会因为多方面原因而被噪声干扰或出现数据丢失，降低了图像的质量（某一像素，如果它与周围像素点相比有明显的不同，则该点被噪声所感染）。这就需要对图像进行一定的增强处理以减小这些缺陷带来的影响。 卷积核（滤波器矩阵）：卷">
 <meta property="og:type" content="article">
-<meta property="og:title" content="设计模式">
-<meta property="og:url" content="https://github.com/FYL0215/2022/03/29/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:title" content="WELCOME！Tangerine’s Blog">
+<meta property="og:url" content="https://github.com/FYL0215/2022/03/31/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="WELCOME！Tangerine’s Blog">
-<meta property="og:description" content="单例设计模式： 1.无继承情况类对象能直接访问类的public成员，但不能直接访问protected、private成员类的成员函数可以将类的private、protected成员变量传出去2.公有继承子类对象能直接访问父类public成员，不能直接访问父类private、protected成员子类不能通过成员函数访问父类的private成员，但protected成员可以3.受保护继承 &amp;#x2F">
+<meta property="og:description" content="图像的平滑处理： 定于：图像平滑是一种&#x3D;&#x3D;区域增强&#x3D;&#x3D;的算法，平滑算法有邻域平均法、均值滤波、边界保持类滤波等。在图像产生、传输和复制过程中，常常会因为多方面原因而被噪声干扰或出现数据丢失，降低了图像的质量（某一像素，如果它与周围像素点相比有明显的不同，则该点被噪声所感染）。这就需要对图像进行一定的增强处理以减小这些缺陷带来的影响。 卷积核（滤波器矩阵）：卷">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-29T15:04:46.000Z">
-<meta property="article:modified_time" content="2022-03-29T15:09:49.752Z">
+<meta property="article:published_time" content="2022-03-31T06:22:38.702Z">
+<meta property="article:modified_time" content="2022-03-31T08:16:41.895Z">
 <meta property="article:author" content="FYL">
 <meta name="twitter:card" content="summary">
   
@@ -73,35 +73,31 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-设计模式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-数字图像处理的相关知识" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/FYL0215/2022/03/29/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="article-date">
-  <time class="dt-published" datetime="2022-03-29T15:04:46.000Z" itemprop="datePublished">2022-03-29</time>
+    <a href="/FYL0215/2022/03/31/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" class="article-date">
+  <time class="dt-published" datetime="2022-03-31T06:22:38.702Z" itemprop="datePublished">2022-03-31</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      设计模式
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><strong>单例设计模式：</strong></p>
-<p>1.无继承情况<br>类对象能直接访问类的public成员，但不能直接访问protected、private成员<br>类的成员函数可以将类的private、protected成员变量传出去<br>2.公有继承<br>子类对象能直接访问父类public成员，不能直接访问父类private、protected成员<br>子类不能通过成员函数访问父类的private成员，但protected成员可以<br>3.受保护继承 &#x2F; 私有继承<br>子类对象不能直接访问父类的所有成员<br>子类不能通过成员函数访问父类的private成员，但protected成员可以</p>
+        <p>图像的平滑处理：</p>
+<p>定于：图像平滑是一种&#x3D;&#x3D;区域增强&#x3D;&#x3D;的算法，平滑算法有<strong>邻域平均法、均值滤波、边界保持类滤波</strong>等。在图像产生、传输和复制过程中，常常会因为多方面原因而<strong>被噪声干扰或出现数据丢失，降低了图像的质量</strong>（某一像素，如果它与周围像素点相比有明显的不同，则该点被噪声所感染）。这就需要<strong>对图像进行一定的增强处理以减小这些缺陷带来的影响</strong>。</p>
+<p><strong>卷积核（滤波器矩阵）</strong>：卷积核就是图像处理时，给定输入图像，输入图像中一个小区域中像素<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8A%A0%E6%9D%83%E5%B9%B3%E5%9D%87/9702101">加权平均</a>后成为输出图像中的每个对应像素，其中权值由一个函数定义，这个函数称为卷积核</p>
+<p><strong>邻域平均法和均值滤波法</strong>：卷积运算</p>
+<p><strong>高斯平滑</strong>：</p>
+<p>优点：为了克服简单局部平均法的弊端(图像模糊)，目前已提出许多保持边缘、细节的局部平滑算法</p>
+<p>与邻域平均法的区别：高斯平滑与简单平滑不同，它在对邻域内像素进行平均时，给予不同位置的像素不同的权值</p>
+<p><strong>图像阈值化：</strong>旨在提取图像中的目标物体，将背景以及噪声区分开来。通常会设定一个阈值T，通过T将图像的像素划分为两类：大于T的像素群和小于T的像素群</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/FYL0215/2022/03/29/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="cl1iq3i900006vs9v8p051soq" data-title="设计模式" class="article-share-link">Share</a>
+      <a data-url="https://github.com/FYL0215/2022/03/31/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" data-id="cl1iq3i970007vs9v4kb33emc" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -111,19 +107,19 @@
     
 <nav id="article-nav">
   
-    <a href="/FYL0215/2022/03/29/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/FYL0215/2022/04/01/%E5%BF%AB%E6%89%8B%E4%B8%80%E9%9D%A2/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          自然语言处理
+          (no title)
         
       </div>
     </a>
   
   
-    <a href="/FYL0215/2022/03/29/SpringBoot%E6%A1%86%E6%9E%B6/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/FYL0215/2022/03/31/Arcgis/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">SpringBoot框架</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
